@@ -2,12 +2,12 @@
 
 Give the answer from this file before opening anything else. Link to source paths when extra detail is required.
 
-## TL;DR
 - Tooling: moonrepo (≥1.41), pnpm 10.18, Biome formatter, Docker Compose for Postgres + Mailpit.
 - Stacks: React (SPA + SSR), Next.js, Astro, Go backends (`go-clean`, `go-modular`), FastAPI (`fastapi-ai`), Strapi CMS.
 - Templates: develop in `apps/`, run `build-templates.sh`, builder scripts inject placeholders, distributed via `.moon/workspace.yml#generator`.
 - Shared UI: `packages/shared-ui/` is large; inspect `src/components/index.ts` or Storybook docs first.
 - Prefer moon tasks (`moon :dev`, `moon :lint`, `moon :test`, `moon :build`) over raw scripts.
+- Need business alignment? See `docs-ai/business-context.md`, `docs-ai/prd-template.md`, and `docs-ai/technical-guide.md`.
 
 ## Essential Commands
 - Install deps → `pnpm install`

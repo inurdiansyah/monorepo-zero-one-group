@@ -35,6 +35,7 @@ Use this file first. Detailed summaries live in `docs-ai/README.md`; load that s
 ## Agent Guidelines
 - Load `docs-ai/README.md` for additional context instead of trawling directories.
 - Grab ready-to-run commands from `docs-ai/quick-reference.md` when you need task reminders.
+- For product/business alignment consult `docs-ai/business-context.md`, `docs-ai/prd-template.md`, and `docs-ai/technical-guide.md`.
 - Avoid expanding `packages/shared-ui` unless necessary; consult `src/components/index.ts` first.
 - When answering developer questions, cite specific paths and moon tasks. Keep responses token-efficient.
 
