@@ -129,3 +129,12 @@ hugo.linux
 # Personal Note
 AUDIT.md
 TODO.md
+
+# SDD Specs (optional - uncomment if you want to track specs in git)
+# specs/
+
+# SDD cache
+.sdd/cache/
+
+# Cursor
+.cursor/cache/
