@@ -43,3 +43,62 @@ For complete guides and advanced usage, visit: 👉 [https://oss.zero-one-group.
 Contributions are welcome! Please open a pull request or ticket for questions and improvements.
 
 Read the full guidelines at: 👉 [https://oss.zero-one-group.com/monorepo/contribution-guidelines](https://oss.zero-one-group.com/monorepo/contribution-guidelines)
+
+## AI-Assisted Development
+
+This monorepo includes comprehensive AI documentation and Spec-Driven Development (SDD) workflows to help developers and AI agents work more effectively.
+
+### Quick Start for AI Agents
+
+- **`AGENTS.md`** - Start here! Concise briefing for AI assistants with key commands and guidelines.
+- **`docs-ai/README.md`** - Detailed project guide with tooling, paths, and best practices.
+- **`docs-ai/quick-reference.md`** - Command cheat sheet for daily operations.
+
+### Spec-Driven Development (SDD)
+
+This repository integrates the [spec-kit-command-cursor](https://github.com/madebyaris/spec-kit-command-cursor) toolkit for structured feature development.
+
+**For Most Features (80%):**
+```bash
+/brief feature-name Description
+```
+Creates a lightweight 30-minute planning document to get started quickly.
+
+**For Complex Features (20%):**
+```bash
+/research feature-name → /specify → /plan → /tasks → /implement
+```
+Full SDD 2.0 workflow for comprehensive planning.
+
+**Documentation:**
+- `docs-ai/sdd-workflow.md` - Complete SDD command reference
+- `.cursor/rules/sdd-system.mdc` - SDD system rules and philosophy
+- `.sdd/guidelines.md` - Monorepo-specific SDD guidelines
+
+### Business Alignment & VDD
+
+Integrate business requirements with technical implementation:
+
+- **`docs-ai/business-context.md`** - Core verticals, business outcomes, and SDD/VDD alignment
+- **`docs-ai/prd-template.md`** - Product Requirements Document template
+- **`docs-ai/technical-guide.md`** - Technical implementation mapping guide
+
+**Recommended Workflow:**
+1. Review business context → Identify vertical
+2. Create PRD (for complex features)
+3. Use SDD commands (`/brief` or `/specify` → `/plan` → `/tasks`)
+4. Reference technical guide during implementation
+
+### Documentation Structure
+
+```
+docs-ai/
+├── README.md              # Main AI guide
+├── quick-reference.md     # Command cheat sheet
+├── business-context.md    # Business verticals & alignment
+├── prd-template.md        # PRD structure
+├── technical-guide.md     # Technical implementation guide
+└── sdd-workflow.md        # SDD commands & workflow
+```
+
+All AI documentation is designed to be token-efficient, allowing AI agents to understand the project structure without scanning the entire codebase.
