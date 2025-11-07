@@ -37,6 +37,7 @@ Use this file first. Detailed summaries live in `docs-ai/README.md`; load that s
 - Grab ready-to-run commands from `docs-ai/quick-reference.md` when you need task reminders.
 - For product/business alignment consult `docs-ai/business-context.md`, `docs-ai/prd-template.md`, and `docs-ai/technical-guide.md`.
 - **SDD Integration**: This monorepo uses Spec-Driven Development - see `docs-ai/sdd-workflow.md` for commands. Use `/brief` for 80% of features (30-min planning), full SDD 2.0 for complex ones. Check `.sdd/guidelines.md` for monorepo-specific SDD rules.
+- **VDD Integration**: Vertical Driven Development guides architecture - organize by business features (vertical slices), not technical layers. See `.cursor/rules/vdd-core-principles.mdc` for VDD philosophy. Use `/vdd-build` or `/vdd-all-in-one` for complete apps with vertical slices.
 - Avoid expanding `packages/shared-ui` unless necessary; consult `src/components/index.ts` first.
 - When answering developer questions, cite specific paths and moon tasks. Keep responses token-efficient.
 
@@ -44,5 +45,6 @@ Use this file first. Detailed summaries live in `docs-ai/README.md`; load that s
 - **Lightweight (80%)**: `/brief feature-name` → Start coding → `/evolve` to update
 - **Complex (20%)**: PRD → `/research` → `/specify` → `/plan` → `/tasks` → `/implement`
 - **Full Projects**: `/sdd-full-plan` for epic-level roadmaps
-- **System Rules**: `.cursor/rules/sdd-system.mdc` contains SDD system overview
+- **VDD Commands**: `/vdd-build` or `/vdd-all-in-one` for complete apps with vertical slices
+- **System Rules**: `.cursor/rules/sdd-system.mdc` contains SDD system overview, `.cursor/rules/vdd-*.mdc` for VDD principles
 
